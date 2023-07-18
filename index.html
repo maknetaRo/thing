@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="upload-box">
+      <label for="uploadImg">Choose a photo!</label>
+
+      <input
+        type="file"
+        name="photo"
+        id="uploadImg"
+        accept=".jpg, .jpeg, .png"
+      />
+    </div>
+
+    <div class="imgBox" style="width: 100%; margin-top: 2rem">
+      <canvas id="canvas"></canvas>
+    </div>
+    <div class="manipulationBtns">
+      <div class="brightnessBtn">
+        <input
+          type="range"
+          name="brightness"
+          id="brightness"
+          value="100"
+          min="20"
+          max="180"
+        />
+        <label for="blur">Brightness</label>
+      </div>
+      <div class="blurBtn">
+        <input type="range" name="blur" id="blur" value="5" min="0" max="10" />
+        <label for="blur">Blur</label>
+      </div>
+    </div>
+    <div class="download-box">
+      <button class="download-btn">Download</button>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
