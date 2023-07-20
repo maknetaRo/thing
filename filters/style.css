@@ -1,0 +1,23 @@
+body {
+  background-color: #1c1d26;
+}
+
+.canvas-container {
+  margin: 2rem auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 8rem);
+}
+
+canvas {
+  min-width: 320px;
+  max-width: 1000px;
+  width: 100%;
+  max-height: calc(100vh - 8rem);
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
