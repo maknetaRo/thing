@@ -3,8 +3,8 @@ body {
 }
 
 .canvas-container {
-  margin: 2rem auto;
-  padding: 2rem;
+  margin: 1rem auto;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -20,4 +20,33 @@ canvas {
   height: 100%;
   display: block;
   object-fit: cover;
+}
+
+.filters-items {
+  list-style: none;
+  display: flex;
+  column-gap: 15px;
+  padding: 0 2rem 2rem;
+}
+.filters-item img {
+  width: 150px;
+  height: auto;
+}
+
+.filters-item {
+  color: #faf5ef;
+  cursor: pointer;
+}
+
+.sepia {
+  filter: sepia(80%);
+}
+.bright {
+  filter: brightness(190%);
+}
+.gray {
+  filter: grayscale(100%);
+}
+.contrast {
+  filter: contrast(150%);
 }
